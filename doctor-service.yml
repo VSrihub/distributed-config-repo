@@ -2,7 +2,7 @@ spring:
   application:
     name: doctor-service
 server:
-  port: 6061
+  port: 6062
 ---
 spring:
   profiles: dev
