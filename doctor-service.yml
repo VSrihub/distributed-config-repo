@@ -6,6 +6,8 @@ spring:
       uri: http://localhost:8888
 server:
   port: 6062
+doctor:
+  fee: 500
 ---
 spring:
   profiles: dev
@@ -33,6 +35,8 @@ spring:
     console:
       enabled: true
       path: /h2Console
+server:
+  port: 6062
 ---
 spring:
   profiles:
