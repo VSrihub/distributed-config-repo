@@ -13,7 +13,7 @@ management:
     shutdown:
       enabled: true 
 doctor:
-  fee: 300
+  fee: 350
 server:
   port: 6062
 
