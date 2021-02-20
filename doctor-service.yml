@@ -4,16 +4,6 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
-management:
-  endpoints:
-    web:
-      exposure:
-        include: beans,mappings,metrics,env,loggers,shutdown,medilab-actuator,refresh
-  endpoint:
-    shutdown:
-      enabled: true 
-doctor:
-  fee: 550
 server:
   port: 6062
 
@@ -31,8 +21,6 @@ spring:
           format_sql: true
     hibernate:
       ddl-auto: update
-server:
-  port: 6062
 ---
 spring:
   profiles: qa
@@ -46,10 +34,8 @@ spring:
     console:
       enabled: true
       path: /h2Console
-server:
-  port: 6063
 ---
 spring:
   profiles:
-    active: qa
+    active: dev
      
