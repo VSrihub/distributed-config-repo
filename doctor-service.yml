@@ -36,7 +36,7 @@ spring:
       enabled: true
       path: /h2Console
 server:
-  port: 6062
+  port: 6063
 ---
 spring:
   profiles:
