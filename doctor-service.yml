@@ -7,5 +7,6 @@ spring:
 server:
   port: 6062
 spring:
-  profiles:
-    active: dev
+  config:
+    activate:
+      on-profile: dev
