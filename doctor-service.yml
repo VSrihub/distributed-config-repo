@@ -9,7 +9,7 @@ server:
 
 ---
 spring:
-  profiles: qa
+  profiles: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/medilab-doctor-service
