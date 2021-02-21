@@ -8,8 +8,10 @@ server:
   port: 6062
 
 ---
-spring:
-  profiles: dev
+spring:  
+  cloud:
+    config:
+      profile: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/medilab-doctor-service
@@ -22,8 +24,10 @@ spring:
     hibernate:
       ddl-auto: update
 ---
-spring:
-  profiles: qa
+spring:  
+  cloud:
+    config:
+      profile: qa
 
   datasource:
     driver-class-name: org.h2.Driver 
@@ -35,10 +39,10 @@ spring:
       enabled: true
       path: /h2Console
 ---
-spring:  
-  cloud:
-    config:
-      profile: dev
+spring:
+  profiles:
+    active: dev
+    
 
 
       
