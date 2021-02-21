@@ -36,4 +36,4 @@ spring:
 ---
 spring:
   profiles:
-    active: qa
+    active: dev
