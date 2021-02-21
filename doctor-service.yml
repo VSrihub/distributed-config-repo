@@ -9,7 +9,9 @@ server:
 
 ---
 spring:
-  profiles: dev
+  config:
+    activate:
+      on-profile: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/medilab-doctor-service
@@ -22,9 +24,12 @@ spring:
     hibernate:
       ddl-auto: update
 ---
+#spring:
+#  profiles: qa
 spring:
-  profiles: qa
-  
+  config:
+    activate:
+      on-profile: qa  
   datasource:
     driver-class-name: org.h2.Driver 
     url: jdbc:h2:mem:hmspro
@@ -35,13 +40,10 @@ spring:
       enabled: true
       path: /h2Console
 ---
-#spring:
-#  profiles:
-#    active: dev
-
 spring:
-  config:
-    activate:
-      on-profile: dev
+  profiles:
+    active: dev
+
+
       
      
