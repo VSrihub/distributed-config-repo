@@ -2,7 +2,7 @@ spring:
   application:
     name: medilab-department-service
   profiles:
-    active: stage
+    active: dev
 server:
   port: 6060
 
