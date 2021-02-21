@@ -1,34 +1,35 @@
 spring:
   application:
     name: doctor-service
-  cloud:
-    config:
-      uri: http://localhost:8888
+  profiles:
+    active: dev
 server:
   port: 6062
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: beans,mappings,metrics,env,loggers,shutdown,medilab-actuator
+  endpoint:
+    shutdown:
+      enabled: true
 ---
-spring:  
-  cloud:
-    config:
-      profile: dev
+spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://medilab-department-service-mysql:3306/medilab-department-service
     url: jdbc:mysql://localhost:3306/medilab-doctor-service
     username: root
     password: root
   jpa:
-    properties:
-          hibernate.dialect: org.hibernate.dialect.MySQL5Dialect 
-          format_sql: true
-    hibernate:
-      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  config:
+    activate:
+      on-profile: dev
 ---
-spring:  
-  cloud:
-    config:
-      profile: qa
-
+spring:
   datasource:
     driver-class-name: org.h2.Driver 
     url: jdbc:h2:mem:hmspro
@@ -38,12 +39,6 @@ spring:
     console:
       enabled: true
       path: /h2Console
----
-spring:
-  profiles:
-    active: dev
-    
-
-
-      
-     
+  config:
+    activate:
+      on-profile: qa
