@@ -35,9 +35,7 @@ spring:
       enabled: true
       path: /h2Console
 ---
-spring:
-  profiles:
-    active: dev    
+spring:  
   cloud:
     config:
       profile: dev
