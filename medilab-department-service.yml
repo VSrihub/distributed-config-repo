@@ -27,8 +27,7 @@ spring:
     show-sql: true
   config:
     activate:
-      on-profile:
-      - dev
+      on-profile: dev
 ---
 spring:
   h2:
@@ -37,5 +36,4 @@ spring:
       path: /h2Console
   config:
     activate:
-      on-profile:
-      - stage
+      on-profile: stage
