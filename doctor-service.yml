@@ -6,6 +6,8 @@ spring:
       uri: http://localhost:8888
 server:
   port: 6062
+doctor:
+  fee: 350
 ---
 spring:
   config:
