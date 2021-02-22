@@ -8,6 +8,12 @@ server:
   port: 6062
 doctor:
   fee: 500
+
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: refresh   
 ---
 spring:
   config:
