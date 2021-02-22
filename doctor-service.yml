@@ -7,7 +7,7 @@ spring:
 server:
   port: 6062
 doctor:
-  fee: 350
+  fee: 500
 ---
 spring:
   config:
