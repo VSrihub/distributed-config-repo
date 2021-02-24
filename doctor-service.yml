@@ -8,6 +8,11 @@ server:
   port: 6062
 doctor:
   fee: 1000
+  rabbitmq: 
+   host: eagle.rmq.cloudamqp.com
+   virtual-host: htkqrrhw
+   username: htkqrrhw
+   password: fk6o9JjMmLHxVwXw44xBv4uqrnDIriaN
 
 management:
   endpoints:
