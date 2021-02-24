@@ -7,7 +7,7 @@ spring:
 server:
   port: 6062
 doctor:
-  fee: 600
+  fee: 750
 
 management:
   endpoints:
