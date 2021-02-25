@@ -7,7 +7,7 @@ spring:
 server:
   port: 6062
 doctor:
-  fee: 750
+  fee: 450
   rabbitmq: 
    host: eagle.rmq.cloudamqp.com
    virtual-host: htkqrrhw
