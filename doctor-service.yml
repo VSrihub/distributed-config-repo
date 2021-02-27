@@ -6,6 +6,9 @@ spring:
       uri: http://localhost:8888
 server:
   port: 6062
+department-service: 
+    ribbon: 
+       listOfServers: localhost:6060,localhost:6061
 doctor:
   fee: 450
   rabbitmq: 
