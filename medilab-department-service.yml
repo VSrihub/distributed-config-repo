@@ -1,8 +1,8 @@
 spring:
   application:
     name: medilab-department-service
-server:
-  port: 6060
+#server:
+  #port: 6060
 
 management:
   endpoints:
