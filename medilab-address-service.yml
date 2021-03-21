@@ -28,7 +28,6 @@ user:
     message: The Data submitted may have already existed. Please check the data and submit once again
 ---
 spring:
-  profiles: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/medilab-address-service
@@ -38,9 +37,14 @@ spring:
   jpa:
     generate-ddl: true
     show-sql: true
+  cloud:
+    config:
+      profile: dev
 ---
 spring:
-  profiles: stage
+  cloud:
+    config:
+      profile: stage
   h2:
     console:
       enabled: true
