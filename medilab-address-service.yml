@@ -3,7 +3,8 @@ spring:
     name: medilab-address-service
   cloud:
     config:
-      uri: http://localhost:8888      
+      uri: http://localhost:8888    
+      profile: dev
 server:
   port: 9060
 springdoc:
