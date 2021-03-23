@@ -37,16 +37,16 @@ spring:
     password: root
   jpa:
     generate-ddl: true
-    show-sql: true
-  cloud:
-    config:
-      profile: dev
+    show-sql: true    
+  config:
+    activate:
+      on-profile: dev
 ---
 spring:
-  cloud:
-    config:
-      profile: stage
   h2:
     console:
       enabled: true
       path: /h2Console
+  config:
+    activate:
+      on-profile: stage
