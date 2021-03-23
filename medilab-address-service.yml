@@ -28,6 +28,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/medilab-address-service
+    #docker url
     #url: jdbc:mysql://medilab-user-service-mysql:3306/medilab-user-store
     username: root
     password: root
