@@ -18,7 +18,7 @@ user:
   duplicate: 
     message: The Data submitted may have already existed. Please check the data and submit once again
 doctor:
-  fee: 550
+  fee: 600
 ---
 spring:
   config:
