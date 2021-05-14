@@ -11,6 +11,8 @@ spring:
     config:
       uri:
       - http://localhost:8888/
+  config:
+    import: optional:configserver
 server:
   port: 9191
 
