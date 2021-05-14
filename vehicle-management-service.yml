@@ -37,24 +37,24 @@ logging:
     root: info
 ---
 spring:
-  #profiles: dev
+  profiles: dev
   datasource:
     username: root
     password: root
     #url: jdbc:mysql://localhost:3306/vehicle-management-service
     url: jdbc:mysql://vehicle-service-mysql:3306/vehicle-service
     driver-class-name: com.mysql.cj.jdbc.Driver
-  cloud:
-    config:
-      profile: dev
+  #cloud:
+    #config:
+      #profile: dev
 
 ---
 spring:
-  #profiles: stage
+  profiles: stage
   h2:
     console:
       enabled: true
       path: /h2Console
-  cloud:
-    config:
-      profile: stage
+  #cloud:
+    #config:
+      #profile: stage
