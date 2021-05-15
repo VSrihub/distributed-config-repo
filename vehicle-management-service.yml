@@ -36,7 +36,7 @@ logging:
     root: info
 todays: 
  vehicle:
-   fare: 50
+   fare: 30
    per:
     km: 1
 ---
