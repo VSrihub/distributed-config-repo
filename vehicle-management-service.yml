@@ -36,7 +36,10 @@ logging:
     root: info
 ---
 spring:
-  profiles: dev
+  #profiles: dev
+  config:
+    activate:
+      on-profile: dev
   datasource:
     username: root
     password: root
@@ -49,7 +52,10 @@ spring:
 
 ---
 spring:
-  profiles: stage
+  #profiles: stage
+  config:
+    activate:
+      on-profile: stage
   h2:
     console:
       enabled: true
