@@ -4,13 +4,12 @@ spring:
   jpa:
     show-sql: true
     generate-ddl: true
-  profiles:
-    active:
-    - dev
+
   cloud:
     config:
       uri:
       - http://localhost:8888/
+      profile: stage
 server:
   port: 9191
 
