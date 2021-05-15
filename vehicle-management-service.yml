@@ -34,6 +34,11 @@ management:
 logging:
   level:
     root: info
+todays: 
+ vehicle:
+   fare: 10
+   per:
+    km: 1
 ---
 spring:
   #profiles: dev
