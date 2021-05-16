@@ -10,8 +10,8 @@ spring:
       uri:
       - http://localhost:8888/
       profile: stage
-server:
-  port: 9191
+#server:
+  #port: 9191
 
 springdoc:
   swagger-ui:
