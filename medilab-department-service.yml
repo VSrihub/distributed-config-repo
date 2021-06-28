@@ -5,17 +5,7 @@ spring:
     console:
       enabled: true
       path: /h2Console
-  cloud:
-    config:
-      #name: http://localhost:8888
-      uri:
-      - http://localhost:8888
-     #import-check: 
-       #enabled: false
-  config:
-    import:
-    - configserver:http://localhost:8888
-      
+    
 server:
   port: 5001
 
