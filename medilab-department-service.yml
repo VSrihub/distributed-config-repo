@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: medilab-department-service
+  h2:
+    console:
+      enabled: true
+      path: /h2Console
+  cloud:
+    config:
+      name: http://localhost:8888
+server:
+  port: 5001
+
+logging:
+  file: 
+    name: department.log
+springdoc:
+  swagger-ui:
+    path: /department-swagger.html
+  api-docs:
+    enabled: true
+    path: /department-api-doc.html
+
+ 
+
+
+    
