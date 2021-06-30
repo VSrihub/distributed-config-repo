@@ -9,7 +9,7 @@ server:
   port: 5002
 
 medilab:
- doctorFee: 300
+ doctorFee: 400
    
 logging:
   file: 
