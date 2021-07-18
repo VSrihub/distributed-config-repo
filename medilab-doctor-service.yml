@@ -1,0 +1,29 @@
+spring:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2Console
+
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/medilab-department-db
+#    username: root
+#    password: root
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    
+springdoc:
+  swagger-ui:
+    path: /doctor-doc.html
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'   
+
+server:
+  port: 5002
