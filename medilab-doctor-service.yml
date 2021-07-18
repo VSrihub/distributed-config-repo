@@ -1,7 +1,5 @@
 spring:
-  application:
-    name: medilab-doctor-service
-
+  
   h2:
     console:
       enabled: true
